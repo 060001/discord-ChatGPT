@@ -105,7 +105,6 @@ async def gptend(interaction: discord.Interaction):
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='みんなのこと'))
     print(f'{bot.user}が起動したよ！')
     await bot.tree.sync()
 
